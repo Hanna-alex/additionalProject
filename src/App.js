@@ -16,3 +16,4 @@ function App() {
 export default App;
 
 // cd ./project-00474
+// json-server --watch src/db.json --port 3007

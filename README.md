@@ -26,7 +26,7 @@
 
 ### Таблицы БД
 
-- _Таблица пользователей (Users)_: user_id / email / password_hash / updated_at
+- _Таблица пользователей (Users)_: user_id / email / password_hash / creared_at / updated_at
 - _Таблица счетов (Accounts)_: account_id / user_id / name / account_type / balance / created_at / updated_at
 
 - _Таблица категорий (Categories)_: category_id / user_id / name / type / icon / created_at / updated_at
