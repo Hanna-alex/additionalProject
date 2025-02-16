@@ -2,11 +2,11 @@ import { Routes, Route } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Content = styled.div`
-  padding:  120px 0
+	padding: 120px 0;
 `
 
 const H2 = styled.h2`
-  text-align: center;
+	text-align: center;
 `
 
 const Header = () => <div>Шапка</div>
@@ -29,9 +29,8 @@ export const App = () => {
 			</Content>
 			<Footer />
 		</>
-	);
+	)
 }
-
 
 // cd ./project-00474
 // json-server --watch src/db.json --port 3007
