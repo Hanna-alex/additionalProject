@@ -1,90 +1,82 @@
 {
-	"users":
-	[
-		{
-			"id": "u0001",
-			"login": "Hanna",
-			"email":"prostor@voz.com",
-			"password": "123qwE!",
-			"created_at": "2024-07-05",
-			"updated_at": "2024-07-07"
-		},
-		{
-			"id": "u0002",
-			"login": "Дария",
-			"email":"dary@voz.com",
-			"password": "456qwE!",
-			"created_at": "2024-08-05",
-			"updated_at": "2024-08-05"
-		}
-
-	],
-	"accounts":[
-		{
-			"id": "a0001",
-			"user_id": "u0001",
-			"name": "Наличные",
-			"type": "Дебетовый",
-			"icon": "far fa-money-bill-alt",
-			"balans": 50485.00,
-			"creates_at": "2024-07-05",
-			"updated_at": ""
-		},
-		{
-			"id": "a0002",
-			"user_id": "u0001",
-			"name": "карта4574",
-			"type": "Накопительный",
-			"icon": "fas fa-money-check",
-			"balans": 1596135.26,
-			"creates_at": "2024-07-05",
-			"updated_at": ""
-		},
-		{
-			"id": "a0003",
-			"user_id": "u0002",
-			"name": "Сбер",
-			"type": "Дебетовый",
-			"icon": "fas fa-money-check",
-			"balans": 90258.06,
-			"creates_at": "2024-08-05",
-			"updated_at": ""
-		}
-	],
-	"categories": [
-		{
-			"id": "C0001",
-			"user_id": "u0001",
-			"name": "Питание",
-			"type": "Расходы",
-			"icon": "fas fa-utensils",
-			"created_at":"2024-07-05",
-			"updated_at":""
-
-		},
-			{
-			"id": "C0002",
-			"user_id": "u0001",
-			"name": "Заработная плата",
-			"type": "Доход",
-			"icon": "fas fa-hand-holding-usd",
-			"created_at":"2024-30-05",
-			"updated_at":""
-
-		}
-	],
-	"transactions": [
-		{
-			"id": "t0001",
-			"user_id": "u0001",
-			"account_id": "a0001",
-			"category_id": "C0001",
-			"amount": -1200.00,
-			"comment": "Теремок",
-			"date": "2024-08-05",
-			"created_at": "2024-07-05-20-01-52",
-			"updated_at": "2024-07-05-20-01-52"
-
-		}
-	]
+	"users": [
+    {
+      "id": 1,
+      "name": "Иван Иванов",
+      "email": "ivan.ivanov@example.com",
+      "created_at": "2023-01-01"
+    },
+    {
+      "id": 2,
+      "name": "Анна Смирнова",
+      "email": "anna.smirnova@example.com",
+      "created_at": "2023-02-15"
+    }
+  ],
+  "accounts": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "account_type": "Сберегательный",
+      "balance": 10000.00
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "account_type": "Текущий",
+      "balance": 2500.50
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "account_type": "Кредитный",
+      "balance": -1500.75
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "name": "Зарплата"
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "name": "Покупки"
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "name": "Развлечения"
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "account_id": 1,
+      "category_id": 1,
+      "amount": 5000.00,
+      "date": "2023-03-01",
+      "description": "Зарплата за февраль"
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "account_id": 2,
+      "category_id": 2,
+      "amount": -1500.00,
+      "date": "2023-03-05",
+      "description": "Покупка одежды"
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "account_id": 3,
+      "category_id": 3,
+      "amount": -200.00,
+      "date": "2023-03-10",
+      "description": "Поход в кино"
+    }
+  ]
 }
