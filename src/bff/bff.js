@@ -9,20 +9,20 @@ export const sevrev = {
 		if (!user) {
 			return {
 				error: 'Такой пользователь не найден',
-				res: null
+				res: null,
 			}
 		}
 
-		if (authPassword === user.password) {
+		if (!authPassword === user.password) {
 			return {
 				error: 'Неверный пароль',
-				res: null
+				res: null,
 			}
 		}
 
 		return {
 			error: null,
-			res: createSission()
+			res: createSission(),
 		}
 	},
 
@@ -32,7 +32,7 @@ export const sevrev = {
 		if (user) {
 			return {
 				error: 'Такой логин уже занят',
-				res: null
+				res: null,
 			}
 		}
 
@@ -40,7 +40,7 @@ export const sevrev = {
 
 		return {
 			error: null,
-			res: createSission
+			res: createSission,
 		}
-	}
+	},
 }
